@@ -8,7 +8,15 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
         
-      
+            var wrapper = $('#wrapper'), container;
+	  for (var key in geemails){
+		container = $('<div id="geemails" class="container"></div>');
+		wrapper.append(container);
+		container.append('<div class="item">' + key +'</div>');
+		container.append('<div class="date">' + geemails[key].date +'</div>');
+		container.append('<div class="sender">' + geemails[key].sender +'</div>');		
+		container.append('<div class="subject">' + geemails[key].subject +'</div>');		
+		}
 	  
 	  
 	  };
