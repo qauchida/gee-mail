@@ -36,8 +36,9 @@
 	  for (var key in geemails){
 		container = $('<div id="geemails" class="container"></div>');
 		wrapper.append(container);
-		container.append('div id = "subject">'+"<a>" + geemails[key].subject + "</a>" 
-		+ geemails[key].date + " From: " + geemails[key].sender + '</div>');		
+		container.append('<div class="subject">' + "<a onclick='alert('test');'>" + geemails[key].subject+ "</a> " 
+		+ geemails[key].date + " From: " + geemails[key].sender+'</div>');		
+		
 		}
 	  
 	  
